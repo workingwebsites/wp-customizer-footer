@@ -1,12 +1,12 @@
 <div class="site-info">
 
 	<?php
-		$copyright = authorize_get_footer_copyright();
+		$copyright = wws_get_footer_copyright();
 
 		if ( is_null( $copyright ) ):
-	?>
+	 ?>
 
-            <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'authorize' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'authorize' ), 'WordPress' ); ?></a>
+	 			<a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf( esc_htm( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
 
         <span class="sep"> | </span>
 
@@ -16,7 +16,7 @@
 
         <?php echo $copyright  ?>
 
-    <?php endif ?>
+  <?php endif ?>
 
 
 

@@ -1,3 +1,17 @@
+
+function wws_get_footer_copyright(){
+//Returns copyright if exist
+	$mod_copyright = get_theme_mod('footer-copyright-setting', '');
+
+	if(empty($mod_copyright)){
+		return NULL;
+	}else{
+		return $mod_copyright;
+	}
+
+}
+
+
 function wws_customize_register( $wp_customize ) {
   /***** COPYRIGHT LINE *****/
   /* Adds new panel to customizer.  Allows users to edit the 'powered by ' line on bottom of site */
